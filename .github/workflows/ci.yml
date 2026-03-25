@@ -47,6 +47,13 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      # 👇 ADD DEBUG STEP HERE
+      - name: Debug Docker Username
+        run: |
+          echo "START"
+          echo "${{ secrets.DOCKER_USERNAME }}"
+          echo "END"    
+
       # Build & Push Backend Docker Image
       - name: Build & Push Backend
         env:
