@@ -1,0 +1,22 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+
+# Build output
+build/
+dist/
+
+# Package lock (optional, remove if you want to track it)
+package-lock.json
+yarn.lock
